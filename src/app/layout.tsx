@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Source_Serif_4 } from "next/font/google";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import "./globals.css";
@@ -18,10 +18,44 @@ const sourceSerif = Source_Serif_4({
   style: ["normal", "italic"],
 });
 
+const SITE_URL = "https://1000worlds.xyz";
+const DESCRIPTION =
+  "1000 worlds. each one lives fully on Solana. no servers, no ipfs, no dead links. minting soon.";
+
 export const metadata: Metadata = {
-  title: "1000 worlds",
-  description:
-    "1000 worlds. each one lives fully on Solana. no servers, no ipfs, no dead links. minting soon.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "1000 worlds",
+    template: "%s · 1000 worlds",
+  },
+  description: DESCRIPTION,
+  applicationName: "1000 worlds",
+  keywords: [
+    "1000 worlds",
+    "Solana NFT",
+    "generative art",
+    "pixel art NFT",
+    "Solana mint",
+  ],
+  openGraph: {
+    title: "1000 worlds",
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: "1000 worlds",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "1000 worlds",
+    description: DESCRIPTION,
+  },
+  // favicon.ico, icon.png, apple-icon.png, opengraph-image.png and
+  // twitter-image.png in this folder are picked up automatically by Next.js
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
