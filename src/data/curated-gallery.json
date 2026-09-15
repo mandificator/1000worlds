@@ -1,0 +1,738 @@
+[
+  {
+    "id": 298,
+    "name": "many hands #0298",
+    "tier": "legendar",
+    "rank": 1,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu aura",
+      "silueta_2": "silueta cu gluga, steag"
+    },
+    "file": "/gallery/0298.png"
+  },
+  {
+    "id": 294,
+    "name": "many hands #0294",
+    "tier": "legendar",
+    "rank": 2,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu palarie, felinar",
+      "silueta_2": "turn cu inel plutitor"
+    },
+    "file": "/gallery/0294.png"
+  },
+  {
+    "id": 284,
+    "name": "many hands #0284",
+    "tier": "legendar",
+    "rank": 3,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu steag",
+      "silueta_2": "silueta cu palarie, felinar"
+    },
+    "file": "/gallery/0284.png"
+  },
+  {
+    "id": 915,
+    "name": "many hands #0915",
+    "tier": "legendar",
+    "rank": 4,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "planeta cu inel",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "cer jos",
+      "silueta_1": "silueta cu palarie, steag",
+      "silueta_2": "silueta cu aura"
+    },
+    "file": "/gallery/0915.png"
+  },
+  {
+    "id": 425,
+    "name": "many hands #0425",
+    "tier": "legendar",
+    "rank": 5,
+    "traits": {
+      "paleta": "Solana",
+      "astru": "planeta cu inel",
+      "cer": "instelat",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu toiag",
+      "silueta_2": "silueta cu toiag"
+    },
+    "file": "/gallery/0425.png"
+  },
+  {
+    "id": 252,
+    "name": "many hands #0252",
+    "tier": "legendar",
+    "rank": 6,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu gluga, steag",
+      "silueta_2": "silueta cu gluga, felinar"
+    },
+    "file": "/gallery/0252.png"
+  },
+  {
+    "id": 805,
+    "name": "many hands #0805",
+    "tier": "legendar",
+    "rank": 7,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta",
+      "silueta_2": "silueta cu coarne, toiag"
+    },
+    "file": "/gallery/0805.png"
+  },
+  {
+    "id": 379,
+    "name": "many hands #0379",
+    "tier": "legendar",
+    "rank": 8,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta",
+      "silueta_2": "silueta cu palarie"
+    },
+    "file": "/gallery/0379.png"
+  },
+  {
+    "id": 345,
+    "name": "many hands #0345",
+    "tier": "legendar",
+    "rank": 9,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "semiluna",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu palarie, aura",
+      "silueta_2": "silueta cu felinar"
+    },
+    "file": "/gallery/0345.png"
+  },
+  {
+    "id": 406,
+    "name": "many hands #0406",
+    "tier": "legendar",
+    "rank": 10,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu coarne, toiag",
+      "silueta_2": "silueta cu gluga"
+    },
+    "file": "/gallery/0406.png"
+  },
+  {
+    "id": 62,
+    "name": "many hands #0062",
+    "tier": "legendar",
+    "rank": 11,
+    "traits": {
+      "paleta": "Solana",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu coarne, aura",
+      "silueta_2": "silueta cu palarie, aura"
+    },
+    "file": "/gallery/0062.png"
+  },
+  {
+    "id": 709,
+    "name": "many hands #0709",
+    "tier": "legendar",
+    "rank": 12,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta",
+      "silueta_2": "silueta cu palarie, aura"
+    },
+    "file": "/gallery/0709.png"
+  },
+  {
+    "id": 186,
+    "name": "many hands #0186",
+    "tier": "legendar",
+    "rank": 13,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer jos",
+      "silueta_1": "silueta cu palarie, toiag",
+      "silueta_2": "silueta cu coarne, steag"
+    },
+    "file": "/gallery/0186.png"
+  },
+  {
+    "id": 873,
+    "name": "many hands #0873",
+    "tier": "legendar",
+    "rank": 14,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer jos",
+      "silueta_1": "silueta cu felinar",
+      "silueta_2": "silueta cu coarne, aura"
+    },
+    "file": "/gallery/0873.png"
+  },
+  {
+    "id": 922,
+    "name": "many hands #0922",
+    "tier": "legendar",
+    "rank": 15,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu palarie",
+      "silueta_2": "silueta cu gluga, steag"
+    },
+    "file": "/gallery/0922.png"
+  },
+  {
+    "id": 681,
+    "name": "many hands #0681",
+    "tier": "legendar",
+    "rank": 16,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "semiluna",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu palarie, aura",
+      "silueta_2": "silueta cu gluga, steag"
+    },
+    "file": "/gallery/0681.png"
+  },
+  {
+    "id": 8,
+    "name": "many hands #0008",
+    "tier": "rar",
+    "rank": 64,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "planeta cu inel",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu gluga, aura",
+      "silueta_2": "turn cu antena"
+    },
+    "file": "/gallery/0008.png"
+  },
+  {
+    "id": 14,
+    "name": "many hands #0014",
+    "tier": "rar",
+    "rank": 106,
+    "traits": {
+      "paleta": "Ultraviolet",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu gluga, toiag",
+      "silueta_2": "turn cu antena"
+    },
+    "file": "/gallery/0014.png"
+  },
+  {
+    "id": 27,
+    "name": "many hands #0027",
+    "tier": "rar",
+    "rank": 111,
+    "traits": {
+      "paleta": "Solana",
+      "astru": "semiluna",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu coarne, aura",
+      "silueta_2": "silueta cu coarne, aura"
+    },
+    "file": "/gallery/0027.png"
+  },
+  {
+    "id": 47,
+    "name": "many hands #0047",
+    "tier": "rar",
+    "rank": 98,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer jos",
+      "silueta_1": "silueta cu coarne",
+      "silueta_2": "silueta cu palarie"
+    },
+    "file": "/gallery/0047.png"
+  },
+  {
+    "id": 55,
+    "name": "many hands #0055",
+    "tier": "rar",
+    "rank": 193,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu coarne, aura",
+      "silueta_2": "silueta cu coarne"
+    },
+    "file": "/gallery/0055.png"
+  },
+  {
+    "id": 73,
+    "name": "many hands #0073",
+    "tier": "rar",
+    "rank": 69,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu coarne, felinar",
+      "silueta_2": "silueta cu aura"
+    },
+    "file": "/gallery/0073.png"
+  },
+  {
+    "id": 86,
+    "name": "many hands #0086",
+    "tier": "rar",
+    "rank": 53,
+    "traits": {
+      "paleta": "Ultraviolet",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "turn cu turla",
+      "silueta_2": "silueta cu coarne, toiag"
+    },
+    "file": "/gallery/0086.png"
+  },
+  {
+    "id": 58,
+    "name": "many hands #0058",
+    "tier": "rar",
+    "rank": 102,
+    "traits": {
+      "paleta": "Solana",
+      "astru": "planeta cu inel",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "copac uscat",
+      "silueta_2": "silueta cu palarie, aura"
+    },
+    "file": "/gallery/0058.png"
+  },
+  {
+    "id": 136,
+    "name": "many hands #0136",
+    "tier": "rar",
+    "rank": 66,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu gluga, felinar",
+      "silueta_2": "turn cu inel plutitor"
+    },
+    "file": "/gallery/0136.png"
+  },
+  {
+    "id": 81,
+    "name": "many hands #0081",
+    "tier": "rar",
+    "rank": 197,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer larg",
+      "silueta_1": "turn cu turla",
+      "silueta_2": "silueta cu aura"
+    },
+    "file": "/gallery/0081.png"
+  },
+  {
+    "id": 126,
+    "name": "many hands #0126",
+    "tier": "rar",
+    "rank": 56,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "echilibrat",
+      "silueta_1": "turn cu turla",
+      "silueta_2": "silueta cu palarie"
+    },
+    "file": "/gallery/0126.png"
+  },
+  {
+    "id": 106,
+    "name": "many hands #0106",
+    "tier": "rar",
+    "rank": 97,
+    "traits": {
+      "paleta": "Ultraviolet",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer jos",
+      "silueta_1": "turn cu turla",
+      "silueta_2": "silueta cu gluga, aura"
+    },
+    "file": "/gallery/0106.png"
+  },
+  {
+    "id": 12,
+    "name": "many hands #0012",
+    "tier": "neobisnuit",
+    "rank": 425,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu felinar",
+      "silueta_2": "brad"
+    },
+    "file": "/gallery/0012.png"
+  },
+  {
+    "id": 16,
+    "name": "many hands #0016",
+    "tier": "neobisnuit",
+    "rank": 394,
+    "traits": {
+      "paleta": "Solana",
+      "astru": "semiluna",
+      "cer": "instelat",
+      "relief": "munti inalti",
+      "orizont": "cer jos",
+      "silueta_1": "brad",
+      "silueta_2": "silueta cu gluga, aura"
+    },
+    "file": "/gallery/0016.png"
+  },
+  {
+    "id": 17,
+    "name": "many hands #0017",
+    "tier": "neobisnuit",
+    "rank": 363,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu coarne, steag",
+      "silueta_2": "turn cu cupola"
+    },
+    "file": "/gallery/0017.png"
+  },
+  {
+    "id": 19,
+    "name": "many hands #0019",
+    "tier": "neobisnuit",
+    "rank": 446,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "soare",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu gluga, toiag",
+      "silueta_2": "turn cu turla"
+    },
+    "file": "/gallery/0019.png"
+  },
+  {
+    "id": 23,
+    "name": "many hands #0023",
+    "tier": "neobisnuit",
+    "rank": 294,
+    "traits": {
+      "paleta": "Ultraviolet",
+      "astru": "planeta cu inel",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "turn cu inel plutitor",
+      "silueta_2": "turn cu inel plutitor"
+    },
+    "file": "/gallery/0023.png"
+  },
+  {
+    "id": 21,
+    "name": "many hands #0021",
+    "tier": "neobisnuit",
+    "rank": 264,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "semiluna",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "cer jos",
+      "silueta_1": "silueta cu palarie, felinar",
+      "silueta_2": "copac uscat"
+    },
+    "file": "/gallery/0021.png"
+  },
+  {
+    "id": 46,
+    "name": "many hands #0046",
+    "tier": "neobisnuit",
+    "rank": 412,
+    "traits": {
+      "paleta": "Solana",
+      "astru": "soare",
+      "cer": "instelat",
+      "relief": "munti inalti",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu gluga",
+      "silueta_2": "silueta cu palarie"
+    },
+    "file": "/gallery/0046.png"
+  },
+  {
+    "id": 63,
+    "name": "many hands #0063",
+    "tier": "neobisnuit",
+    "rank": 232,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu gluga, felinar",
+      "silueta_2": "silueta cu coarne, felinar"
+    },
+    "file": "/gallery/0063.png"
+  },
+  {
+    "id": 25,
+    "name": "many hands #0025",
+    "tier": "neobisnuit",
+    "rank": 447,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "munti inalti",
+      "orizont": "cer jos",
+      "silueta_1": "turn cu inel plutitor",
+      "silueta_2": "copac uscat"
+    },
+    "file": "/gallery/0025.png"
+  },
+  {
+    "id": 26,
+    "name": "many hands #0026",
+    "tier": "neobisnuit",
+    "rank": 417,
+    "traits": {
+      "paleta": "Ultraviolet",
+      "astru": "semiluna",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "creatura",
+      "silueta_2": "silueta cu palarie"
+    },
+    "file": "/gallery/0026.png"
+  },
+  {
+    "id": 1,
+    "name": "many hands #0001",
+    "tier": "comun",
+    "rank": 545,
+    "traits": {
+      "paleta": "Ultraviolet",
+      "astru": "soare",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "echilibrat",
+      "silueta_1": "silueta cu palarie, aura",
+      "silueta_2": "creatura"
+    },
+    "file": "/gallery/0001.png"
+  },
+  {
+    "id": 2,
+    "name": "many hands #0002",
+    "tier": "comun",
+    "rank": 838,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "semiluna",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "copac uscat",
+      "silueta_2": "creatura"
+    },
+    "file": "/gallery/0002.png"
+  },
+  {
+    "id": 5,
+    "name": "many hands #0005",
+    "tier": "comun",
+    "rank": 747,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu steag",
+      "silueta_2": "copac uscat"
+    },
+    "file": "/gallery/0005.png"
+  },
+  {
+    "id": 10,
+    "name": "many hands #0010",
+    "tier": "comun",
+    "rank": 518,
+    "traits": {
+      "paleta": "Gheata",
+      "astru": "soare",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "cer jos",
+      "silueta_1": "silueta cu toiag",
+      "silueta_2": "turn cu inel plutitor"
+    },
+    "file": "/gallery/0010.png"
+  },
+  {
+    "id": 13,
+    "name": "many hands #0013",
+    "tier": "comun",
+    "rank": 647,
+    "traits": {
+      "paleta": "Solana",
+      "astru": "soare",
+      "cer": "instelat",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "silueta cu steag",
+      "silueta_2": "turn cu antena"
+    },
+    "file": "/gallery/0013.png"
+  },
+  {
+    "id": 4,
+    "name": "many hands #0004",
+    "tier": "comun",
+    "rank": 831,
+    "traits": {
+      "paleta": "Ultraviolet",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer jos",
+      "silueta_1": "creatura",
+      "silueta_2": "turn cu antena"
+    },
+    "file": "/gallery/0004.png"
+  },
+  {
+    "id": 3,
+    "name": "many hands #0003",
+    "tier": "comun",
+    "rank": 954,
+    "traits": {
+      "paleta": "Asfintit",
+      "astru": "soare",
+      "cer": "senin",
+      "relief": "dealuri line",
+      "orizont": "cer larg",
+      "silueta_1": "copac uscat",
+      "silueta_2": "creatura"
+    },
+    "file": "/gallery/0003.png"
+  },
+  {
+    "id": 7,
+    "name": "many hands #0007",
+    "tier": "comun",
+    "rank": 887,
+    "traits": {
+      "paleta": "Aurora",
+      "astru": "soare",
+      "cer": "instelat",
+      "relief": "munti inalti",
+      "orizont": "cer jos",
+      "silueta_1": "copac rotund",
+      "silueta_2": "copac rotund"
+    },
+    "file": "/gallery/0007.png"
+  }
+]
