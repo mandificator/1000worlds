@@ -27,11 +27,11 @@ export function Lore() {
           Fully on-chain NFTs that evolve with every new owner.
         </p>
 
-        <h3 className="mt-20 text-center font-display text-2xl text-parchment">
+        <h2 className="mt-20 text-center font-display text-5xl text-parchment sm:text-6xl">
           what&apos;s new
-        </h3>
+        </h2>
 
-        <div className="mx-auto mt-8 max-w-2xl space-y-6 text-lg leading-relaxed text-parchment-dim italic sm:text-xl">
+        <div className="mx-auto mt-8 max-w-2xl space-y-6 text-xl leading-relaxed text-parchment-dim italic sm:text-2xl">
           <p>
             Inscriptions on Solana already exist. Data written into a
             transaction stays on-chain forever, but a transaction can&apos;t
@@ -48,10 +48,10 @@ export function Lore() {
         <div className="mx-auto mt-16 grid gap-6 text-left sm:grid-cols-2">
           {features.map((f) => (
             <div key={f.title} className="border border-gold/15 bg-wall p-6">
-              <h4 className="font-display text-xl text-parchment">
+              <h3 className="font-display text-2xl text-parchment">
                 {f.title}
-              </h4>
-              <p className="mt-2 text-sm text-parchment-dim">{f.body}</p>
+              </h3>
+              <p className="mt-2 text-lg text-parchment-dim">{f.body}</p>
             </div>
           ))}
         </div>

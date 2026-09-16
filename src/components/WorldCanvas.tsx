@@ -10,10 +10,12 @@ export function WorldCanvas({
   seed,
   phase = 0,
   className,
+  onHandsChange,
 }: {
   seed: number;
   phase?: number;
   className?: string;
+  onHandsChange?: (hands: number) => void;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -47,6 +49,7 @@ export function WorldCanvas({
         data[o + 3] = 255;
       }
       ctx.putImageData(imageData, 0, 0);
+      onHandsChange?.(hands);
     };
 
     draw(Math.min(step, 64));
@@ -64,6 +67,7 @@ export function WorldCanvas({
     raf = requestAnimationFrame(loop);
 
     return () => cancelAnimationFrame(raf);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [seed, phase]);
 
   return (

@@ -6,7 +6,7 @@ import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 const tiers = [
   { label: "common", count: 550, tone: "text-parchment-dim" },
   { label: "uncommon", count: 250, tone: "text-parchment" },
-  { label: "rare", count: 150, tone: "text-gold" },
+  { label: "rare", count: 150, tone: "text-gold-bright" },
   { label: "legendary", count: 50, tone: "text-gold-bright" },
 ];
 

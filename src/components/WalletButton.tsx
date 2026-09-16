@@ -29,7 +29,7 @@ export function WalletButton({ className = "" }: { className?: string }) {
   return (
     <button
       onClick={onClick}
-      className={`group relative overflow-hidden border border-gold/40 px-5 py-2 text-sm tracking-[0.18em] uppercase text-parchment transition-colors hover:border-gold hover:text-gold ${className}`}
+      className={`group relative overflow-hidden border border-gold/40 px-5 py-2 text-sm tracking-[0.18em] uppercase text-parchment transition-colors hover:border-gold hover:text-gold-bright ${className}`}
     >
       <span className="relative z-10">{label}</span>
       <span

@@ -7,7 +7,7 @@ const GalleryCanvas = dynamic(() => import("./GalleryCanvas"), {
   ssr: false,
   loading: () => (
     <div className="flex h-full w-full items-center justify-center bg-ink">
-      <span className="font-serif text-sm tracking-[0.3em] text-gold/70 uppercase">
+      <span className="font-serif text-sm tracking-[0.3em] text-gold-bright/70 uppercase">
         entering the gallery…
       </span>
     </div>

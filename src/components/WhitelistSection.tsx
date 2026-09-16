@@ -58,14 +58,14 @@ export function WhitelistSection() {
       <div className="mx-auto max-w-3xl text-center">
         <div className="divider-rule mx-auto mb-10 w-24" />
 
-        <span className="inline-block border border-gold/40 px-3 py-1 text-[10px] tracking-[0.3em] text-gold uppercase">
+        <span className="inline-block border border-gold/40 px-3 py-1 text-[10px] tracking-[0.3em] text-gold-bright uppercase">
           opens soon
         </span>
 
         <h2 className="mt-6 font-display text-5xl text-parchment sm:text-6xl">
           get your worlds
         </h2>
-        <p className="mx-auto mt-6 max-w-lg text-lg text-parchment-dim italic">
+        <p className="mx-auto mt-6 max-w-lg text-lg text-parchment-dim italic sm:text-xl">
           Deposit $WORLDS. Everyone pays the same price per world. The rest
           comes back to you.
         </p>
@@ -73,27 +73,28 @@ export function WhitelistSection() {
         <div className="mx-auto mt-16 grid gap-6 text-left sm:grid-cols-2">
           {steps.map((s) => (
             <div key={s.n} className="border border-gold/15 bg-wall p-6">
-              <span className="font-display text-3xl text-gold/70">
+              <span className="font-display text-3xl text-gold-bright/70">
                 {s.n}
               </span>
-              <h3 className="mt-3 font-display text-xl text-parchment">
+              <h3 className="mt-3 font-display text-2xl text-parchment">
                 {s.title}
               </h3>
-              <p className="mt-2 text-sm text-parchment-dim">{s.body}</p>
+              <p className="mt-2 text-lg text-parchment-dim">{s.body}</p>
             </div>
           ))}
         </div>
 
         <div className="mx-auto mt-10 max-w-xl border border-gold/25 bg-wall px-8 py-8 text-left">
-          <p className="text-xs tracking-[0.25em] text-gold uppercase">
+          <p className="text-xs tracking-[0.25em] text-gold-bright uppercase">
             example
           </p>
-          <p className="mt-3 text-parchment-dim">
-            You deposit <span className="text-parchment">4,996 $WORLDS</span>.
-            The final price is <span className="text-parchment">1,000</span>.
+          <p className="mt-3 text-lg text-parchment-dim">
+            You deposit{" "}
+            <span className="text-parchment">430,000 $WORLDS</span>. The
+            final price is <span className="text-parchment">100,000</span>.
             <br />
-            You get <span className="text-gold-bright">4 worlds</span>. 4,000
-            $WORLDS are burned. 996 come back to you.
+            You get <span className="text-gold-bright">4 worlds</span>.
+            400,000 $WORLDS are burned. 30,000 come back to you.
           </p>
         </div>
 
@@ -104,7 +105,7 @@ export function WhitelistSection() {
           >
             deposits open soon
           </button>
-          <p className="mt-4 text-xs text-parchment-dim/70">
+          <p className="mt-4 text-sm text-parchment-dim/70">
             the deposit vault isn&apos;t live yet. this section previews how
             it will work — we&apos;ll open it before mint.
           </p>
@@ -118,12 +119,12 @@ export function WhitelistSection() {
             {faq.map((item) => (
               <details key={item.q} className="group py-4">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-parchment">
-                  <span className="font-display text-lg">{item.q}</span>
-                  <span className="text-gold transition-transform group-open:rotate-45">
+                  <span className="font-display text-xl">{item.q}</span>
+                  <span className="text-gold-bright transition-transform group-open:rotate-45">
                     +
                   </span>
                 </summary>
-                <p className="mt-3 text-sm text-parchment-dim">{item.a}</p>
+                <p className="mt-3 text-lg text-parchment-dim">{item.a}</p>
               </details>
             ))}
           </div>

@@ -12,7 +12,7 @@ export function Footer() {
             href="https://x.com"
             target="_blank"
             rel="noreferrer"
-            className="transition-colors hover:text-gold"
+            className="transition-colors hover:text-gold-bright"
           >
             X
           </a>
@@ -22,7 +22,7 @@ export function Footer() {
               e.preventDefault();
               scrollToId("gallery");
             }}
-            className="transition-colors hover:text-gold"
+            className="transition-colors hover:text-gold-bright"
           >
             gallery
           </a>
@@ -32,7 +32,7 @@ export function Footer() {
               e.preventDefault();
               scrollToId("whitelist");
             }}
-            className="transition-colors hover:text-gold"
+            className="transition-colors hover:text-gold-bright"
           >
             whitelist
           </a>

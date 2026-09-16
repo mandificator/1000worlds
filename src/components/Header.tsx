@@ -33,7 +33,7 @@ export function Header() {
                 e.preventDefault();
                 scrollToId(l.id);
               }}
-              className="text-xs tracking-[0.25em] text-parchment-dim uppercase transition-colors hover:text-gold"
+              className="text-xs tracking-[0.25em] text-parchment-dim uppercase transition-colors hover:text-gold-bright"
             >
               {l.label}
             </a>
