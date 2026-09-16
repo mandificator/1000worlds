@@ -31,7 +31,7 @@ export function Lore() {
           what&apos;s new
         </h2>
 
-        <div className="mx-auto mt-8 max-w-2xl space-y-6 text-xl leading-relaxed text-parchment-dim italic sm:text-2xl">
+        <div className="mt-8 space-y-6 text-xl leading-relaxed text-parchment-dim italic sm:text-2xl">
           <p>
             Inscriptions on Solana already exist. Data written into a
             transaction stays on-chain forever, but a transaction can&apos;t
