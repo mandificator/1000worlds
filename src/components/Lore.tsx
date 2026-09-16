@@ -1,29 +1,59 @@
+const features = [
+  {
+    title: "One world, one transaction.",
+    body: "Each world is inscribed in a single transaction. Complete, not split.",
+  },
+  {
+    title: "Inscriptions you can trade.",
+    body: "Each world can be owned, sold and transferred like any NFT.",
+  },
+  {
+    title: "It evolves with every new owner.",
+    body: "Every new owner changes the world, up to 64 times.",
+  },
+  {
+    title: "Then it closes.",
+    body: "After the 64th owner, the world stops changing. It can still be traded, but its final form is fixed forever.",
+  },
+];
+
 export function Lore() {
   return (
     <section id="lore" className="relative bg-ink px-6 py-32 md:px-10">
       <div className="mx-auto max-w-4xl">
         <div className="divider-rule mx-auto mb-16 w-24" />
 
-        <p className="font-display text-3xl leading-relaxed text-parchment sm:text-4xl md:text-5xl">
-          1000 worlds. each one lives fully on Solana.{" "}
-          <span className="text-gold italic">no servers, no ipfs,</span> no
-          dead links.
+        <p className="text-center text-xs tracking-[0.3em] text-gold-bright uppercase sm:whitespace-nowrap">
+          Fully on-chain NFTs that evolve with every new owner.
         </p>
 
-        <div className="mt-16 grid gap-12 text-lg leading-relaxed text-parchment-dim italic sm:text-xl md:grid-cols-2 md:gap-16">
+        <h3 className="mt-20 text-center font-display text-2xl text-parchment">
+          what&apos;s new
+        </h3>
+
+        <div className="mx-auto mt-8 max-w-2xl space-y-6 text-lg leading-relaxed text-parchment-dim italic sm:text-xl">
           <p>
-            A world starts almost empty — sky, horizon, ground. Its first
-            owner is the founder. Every time it changes hands, it changes.
-            Something new appears: a silhouette, a building, someone
-            watching. It can land on any of four layers, near or far. No one
-            knows where.
+            Inscriptions on Solana already exist. Data written into a
+            transaction stays on-chain forever, but a transaction can&apos;t
+            be owned or traded. And until September 15, 2026, any inscription
+            over 1,232 bytes had to be split across multiple transactions.
           </p>
           <p>
-            What appears never disappears. A world can have 64 owners. At the
-            64th, it closes — the landscape is complete and never changes
-            again. A closed world can still be traded, but it remembers no
-            one new. Only its 64 owners ever mattered.
+            Solana&apos;s v1 upgrade raised the limit to{" "}
+            <span className="text-parchment not-italic">4,096 bytes</span>.
+            1000worlds is built on it.
           </p>
+        </div>
+
+        <div className="mx-auto mt-16 grid gap-6 text-left sm:grid-cols-2">
+          {features.map((f) => (
+            <div key={f.title} className="border border-gold/15 bg-wall p-6">
+              <h4 className="font-display text-xl text-parchment">
+                {f.title}
+              </h4>
+              <p className="mt-2 text-sm text-parchment-dim">{f.body}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
