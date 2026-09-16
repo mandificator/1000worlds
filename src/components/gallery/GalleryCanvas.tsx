@@ -1,10 +1,10 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, type RefObject } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { Room } from "./Room";
 import { Artwork } from "./Artwork";
+import { ScrollCamera } from "./ScrollCamera";
 import { wallPlacements } from "./featured";
 
 function SceneLights() {
@@ -44,7 +44,11 @@ function SceneLights() {
   );
 }
 
-export default function GalleryCanvas() {
+export default function GalleryCanvas({
+  progressRef,
+}: {
+  progressRef: RefObject<number>;
+}) {
   return (
     <Canvas
       shadows={false}
@@ -61,18 +65,7 @@ export default function GalleryCanvas() {
           <Artwork key={placement.piece.id} placement={placement} />
         ))}
       </Suspense>
-      <OrbitControls
-        makeDefault
-        target={[0, 3, 1]}
-        enablePan={false}
-        enableZoom={false}
-        minPolarAngle={Math.PI * 0.28}
-        maxPolarAngle={Math.PI * 0.58}
-        autoRotate
-        autoRotateSpeed={0.35}
-        enableDamping
-        dampingFactor={0.08}
-      />
+      <ScrollCamera progressRef={progressRef} />
     </Canvas>
   );
 }

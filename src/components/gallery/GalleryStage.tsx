@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { RefObject } from "react";
 
 const GalleryCanvas = dynamic(() => import("./GalleryCanvas"), {
   ssr: false,
@@ -13,10 +14,14 @@ const GalleryCanvas = dynamic(() => import("./GalleryCanvas"), {
   ),
 });
 
-export function GalleryStage() {
+export function GalleryStage({
+  progressRef,
+}: {
+  progressRef: RefObject<number>;
+}) {
   return (
     <div className="absolute inset-0">
-      <GalleryCanvas />
+      <GalleryCanvas progressRef={progressRef} />
     </div>
   );
 }

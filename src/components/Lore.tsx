@@ -25,20 +25,6 @@ export function Lore() {
             one new. Only its 64 owners ever mattered.
           </p>
         </div>
-
-        <div className="mt-24">
-          <img
-            src="/lore/evolution.png"
-            alt="a single world across 0, 5, 12, 24, 40 and 64 hands"
-            width={1208}
-            height={1208}
-            className="w-full border border-gold/15"
-            style={{ imageRendering: "pixelated" }}
-          />
-          <p className="mt-4 text-center text-xs tracking-[0.3em] text-parchment-dim/70 uppercase">
-            one world, at 0 — 5 — 12 — 24 — 40 — 64 hands
-          </p>
-        </div>
       </div>
     </section>
   );
