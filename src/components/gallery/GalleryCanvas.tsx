@@ -1,11 +1,23 @@
 "use client";
 
-import { Suspense, type RefObject } from "react";
+import { Suspense, useEffect, useState, type RefObject } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Room } from "./Room";
 import { Artwork } from "./Artwork";
 import { ScrollCamera } from "./ScrollCamera";
 import { wallPlacements } from "./featured";
+
+function useIsMobile() {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    const update = () => setMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+  return mobile;
+}
 
 function SceneLights() {
   return (
@@ -49,18 +61,20 @@ export default function GalleryCanvas({
 }: {
   progressRef: RefObject<number>;
 }) {
+  const mobile = useIsMobile();
+
   return (
     <Canvas
       shadows={false}
-      dpr={[1, 1.75]}
-      gl={{ antialias: true }}
+      dpr={mobile ? 1 : [1, 1.75]}
+      gl={{ antialias: !mobile, powerPreference: "high-performance" }}
       camera={{ position: [0, 3.4, -9.5], fov: 52, near: 0.1, far: 60 }}
     >
       <color attach="background" args={["#000000"]} />
       <fog attach="fog" args={["#000000", 12, 30]} />
       <SceneLights />
       <Suspense fallback={null}>
-        <Room />
+        <Room mobile={mobile} />
         {wallPlacements.map((placement) => (
           <Artwork key={placement.piece.id} placement={placement} />
         ))}

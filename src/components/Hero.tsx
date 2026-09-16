@@ -48,7 +48,7 @@ export function Hero() {
           ref={overlayRef}
           className="pointer-events-none relative z-10 flex h-full flex-col items-center justify-center px-6 text-center"
         >
-          <p className="fade-up mb-5 text-xs tracking-[0.5em] text-gold-bright uppercase">
+          <p className="fade-up mb-5 max-w-xs text-xs tracking-[0.08em] text-gold-bright uppercase sm:max-w-none sm:tracking-[0.5em]">
             Fully on-chain NFTs that evolve with every new owner.
           </p>
           <h1

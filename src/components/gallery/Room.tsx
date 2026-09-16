@@ -3,7 +3,7 @@
 import { MeshReflectorMaterial } from "@react-three/drei";
 import { roomBounds } from "./featured";
 
-export function Room() {
+export function Room({ mobile = false }: { mobile?: boolean }) {
   const { halfWidth, halfDepth, height } = roomBounds;
   const width = halfWidth * 2;
   const depth = halfDepth * 2;
@@ -13,17 +13,21 @@ export function Room() {
       {/* floor */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
         <planeGeometry args={[width, depth]} />
-        <MeshReflectorMaterial
-          blur={[300, 80]}
-          resolution={1024}
-          mixBlur={1}
-          mixStrength={18}
-          roughness={0.95}
-          depthScale={1}
-          minDepthThreshold={0.85}
-          color="#000000"
-          metalness={0.3}
-        />
+        {mobile ? (
+          <meshStandardMaterial color="#050505" roughness={1} metalness={0} />
+        ) : (
+          <MeshReflectorMaterial
+            blur={[300, 80]}
+            resolution={1024}
+            mixBlur={1}
+            mixStrength={18}
+            roughness={0.95}
+            depthScale={1}
+            minDepthThreshold={0.85}
+            color="#000000"
+            metalness={0.3}
+          />
+        )}
       </mesh>
 
       {/* ceiling */}

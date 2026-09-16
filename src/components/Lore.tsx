@@ -23,7 +23,7 @@ export function Lore() {
       <div className="mx-auto max-w-4xl">
         <div className="divider-rule mx-auto mb-16 w-24" />
 
-        <p className="text-center text-xs tracking-[0.3em] text-gold-bright uppercase sm:whitespace-nowrap">
+        <p className="text-center text-xs tracking-[0.06em] text-gold-bright uppercase sm:tracking-[0.3em] sm:whitespace-nowrap">
           Fully on-chain NFTs that evolve with every new owner.
         </p>
 

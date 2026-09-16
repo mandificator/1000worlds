@@ -5,7 +5,10 @@ import * as THREE from "three";
 import type { RefObject } from "react";
 
 const TARGET = new THREE.Vector3(0, 3, 1);
-const RADIUS = 10.51;
+// kept well inside the room's walls (halfWidth 10 / halfDepth 12) at every
+// azimuth angle, so the camera never clips through a wall or its frames
+// mid-spin (that clipping was the stray white flash cutting through frame)
+const RADIUS = 7.5;
 const POLAR = 1.533; // ~level, slightly upward — matches the original resting shot
 const SPIN_END = 0.72; // scroll progress where the 360° spin completes
 const DESCEND_TARGET_Y = -3; // how far the camera sinks after the spin
