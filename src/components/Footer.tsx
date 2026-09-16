@@ -27,14 +27,14 @@ export function Footer() {
             gallery
           </a>
           <a
-            href="#mint"
+            href="#whitelist"
             onClick={(e) => {
               e.preventDefault();
-              scrollToId("mint");
+              scrollToId("whitelist");
             }}
             className="transition-colors hover:text-gold"
           >
-            mint
+            whitelist
           </a>
         </div>
         <p className="text-xs text-parchment-dim/60">

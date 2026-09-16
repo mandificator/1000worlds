@@ -68,23 +68,19 @@ export function Hero() {
             className="fade-up pointer-events-auto mt-10 flex flex-wrap items-center justify-center gap-4"
             style={{ animationDelay: "0.4s" }}
           >
-            <a
-              href="#mint"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToId("mint");
-              }}
-              className="border border-gold bg-gold px-7 py-3 text-sm tracking-[0.2em] text-ink uppercase transition-colors hover:bg-gold-bright hover:border-gold-bright"
+            <span
+              className="cursor-not-allowed border border-gold/25 px-7 py-3 text-sm tracking-[0.2em] text-parchment-dim/60 uppercase"
+              title="minting isn't open yet"
             >
-              mint
-            </a>
+              mint — coming soon
+            </span>
             <a
               href="#whitelist"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToId("whitelist");
               }}
-              className="border border-gold/40 px-7 py-3 text-sm tracking-[0.2em] text-parchment uppercase transition-colors hover:border-gold hover:text-gold"
+              className="border border-gold bg-gold px-7 py-3 text-sm tracking-[0.2em] text-ink uppercase transition-colors hover:bg-gold-bright hover:border-gold-bright"
             >
               join whitelist
             </a>

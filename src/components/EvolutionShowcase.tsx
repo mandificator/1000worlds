@@ -1,16 +1,15 @@
+import { WorldCanvas } from "./WorldCanvas";
+
+const WORLD = { seed: 1035439, phase: 0 }; // #298 · Asfintit, rank 1 legendary
+
 export function EvolutionShowcase() {
   return (
-    <section className="relative flex h-[100svh] w-full items-center justify-center bg-black">
-      <img
-        src="/lore/evolution.png"
-        alt="a single world across 0, 5, 12, 24, 40 and 64 hands"
-        width={1208}
-        height={1208}
-        className="h-full w-full object-contain"
-        style={{ imageRendering: "pixelated" }}
-      />
-      <p className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center text-[10px] tracking-[0.35em] text-parchment-dim/70 uppercase">
-        one world, at 0 — 5 — 12 — 24 — 40 — 64 hands
+    <section className="relative flex h-[100svh] w-full flex-col items-center justify-center gap-8 bg-black px-6 py-16">
+      <div className="aspect-square w-full max-w-xl border border-white/80 bg-black p-1">
+        <WorldCanvas seed={WORLD.seed} phase={WORLD.phase} className="block w-full" />
+      </div>
+      <p className="text-center text-[10px] tracking-[0.35em] text-parchment-dim/70 uppercase">
+        one world, live — from 0 to 64 hands, on loop
       </p>
     </section>
   );

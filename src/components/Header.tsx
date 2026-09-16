@@ -6,7 +6,6 @@ import { scrollToId } from "@/lib/scroll";
 const links = [
   { id: "gallery", label: "gallery" },
   { id: "lore", label: "lore" },
-  { id: "mint", label: "mint" },
   { id: "whitelist", label: "whitelist" },
 ];
 
