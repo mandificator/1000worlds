@@ -1,28 +1,33 @@
 import { FlowDiagram, FlowLabel, FlowLine, FlowNode, FlowPct } from "./flow-primitives";
 
+const HOLDERS_DETAIL = [
+  "redistributed proportional to NFTs held",
+  "and their art's upgrade stage",
+];
+
 function TokenFeesFlow() {
   return (
-    <FlowDiagram width={760} height={430}>
-      <FlowLine d="M180,210 C310,210 310,90 360,90 L430,90" />
-      <FlowLine d="M180,210 C310,210 310,330 360,330 L430,330" />
-      <FlowNode cx={150} cy={210} />
-      <FlowNode cx={460} cy={90} accent />
-      <FlowNode cx={460} cy={330} />
+    <FlowDiagram width={900} height={340}>
+      <FlowLine d="M336,170 C460,170 460,70 510,70 L570,70" />
+      <FlowLine d="M336,170 C460,170 460,270 510,270 L570,270" />
+      <FlowNode cx={306} cy={170} />
+      <FlowNode cx={600} cy={70} accent />
+      <FlowNode cx={600} cy={270} />
 
-      <FlowPct x={300} y={150} value="80%" />
-      <FlowPct x={300} y={270} value="20%" />
+      <FlowPct x={460} y={120} value="80%" />
+      <FlowPct x={460} y={220} value="20%" />
 
-      <FlowLabel x={150} y={255} title="fees from $WORLDS trades" />
+      <FlowLabel x={261} y={170} side="left" title="fees from $WORLDS trades" />
       <FlowLabel
-        x={460}
-        y={135}
+        x={645}
+        y={70}
         accent
         title="to NFT holders"
-        detail={["redistributed proportional to NFTs held", "and their art's upgrade stage"]}
+        detail={HOLDERS_DETAIL}
       />
       <FlowLabel
-        x={460}
-        y={375}
+        x={645}
+        y={270}
         title="burned"
         detail={["removed from the $WORLDS supply,", "permanently"]}
       />
@@ -32,35 +37,36 @@ function TokenFeesFlow() {
 
 function RoyaltiesFlow() {
   return (
-    <FlowDiagram width={920} height={430}>
-      <FlowLine d="M180,210 L320,210" />
-      <FlowLine d="M380,210 C520,210 520,90 570,90 L670,90" />
-      <FlowLine d="M380,210 C520,210 520,330 570,330 L670,330" />
-      <FlowNode cx={150} cy={210} />
-      <FlowNode cx={350} cy={210} />
-      <FlowNode cx={700} cy={90} accent />
-      <FlowNode cx={700} cy={330} />
+    <FlowDiagram width={1100} height={340}>
+      <FlowLine d="M330,170 L470,170" />
+      <FlowLine d="M530,170 C660,170 660,70 710,70 L770,70" />
+      <FlowLine d="M530,170 C660,170 660,270 710,270 L770,270" />
+      <FlowNode cx={300} cy={170} />
+      <FlowNode cx={500} cy={170} />
+      <FlowNode cx={800} cy={70} accent />
+      <FlowNode cx={800} cy={270} />
 
-      <FlowPct x={520} y={150} value="80%" />
-      <FlowPct x={520} y={270} value="20%" />
+      <FlowPct x={660} y={120} value="80%" />
+      <FlowPct x={660} y={220} value="20%" />
 
-      <FlowLabel x={150} y={255} title="royalties from NFT trades" />
+      <FlowLabel x={255} y={170} side="left" title="royalties from NFT trades" />
       <FlowLabel
-        x={350}
-        y={255}
+        x={500}
+        y={125}
+        side="top"
         title="buy $WORLDS"
         detail={["royalties buy $WORLDS", "on the market"]}
       />
       <FlowLabel
-        x={700}
-        y={135}
+        x={845}
+        y={70}
         accent
-        title="to users"
-        detail={["distributed to users on every trade"]}
+        title="to NFT holders"
+        detail={HOLDERS_DETAIL}
       />
       <FlowLabel
-        x={700}
-        y={375}
+        x={845}
+        y={270}
         title="burned"
         detail={["removed from the $WORLDS supply,", "permanently"]}
       />
