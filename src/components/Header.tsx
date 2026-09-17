@@ -1,6 +1,6 @@
 "use client";
 
-import { WalletButton } from "./WalletButton";
+import { WorldsWallet } from "./WorldsWallet";
 import { scrollToId } from "@/lib/scroll";
 
 const links = [
@@ -39,7 +39,7 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <WalletButton />
+        <WorldsWallet />
       </div>
     </header>
   );
