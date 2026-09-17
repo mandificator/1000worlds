@@ -106,6 +106,17 @@ body {
   animation-play-state: paused;
 }
 
+@keyframes flow-dash {
+  to {
+    stroke-dashoffset: -180;
+  }
+}
+
+.flow-dash {
+  stroke-dasharray: 3 15;
+  animation: flow-dash 3.5s linear infinite;
+}
+
 .divider-rule {
   height: 1px;
   background: linear-gradient(

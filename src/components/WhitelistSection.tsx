@@ -2,7 +2,7 @@ const steps = [
   {
     n: "01",
     title: "deposit",
-    body: "Lock $WORLDS in the whitelist vault. Deposit any amount, as many times as you want.",
+    body: "Lock at least 10,000 $WORLDS in the whitelist vault. Deposit as many times as you want.",
   },
   {
     n: "02",
@@ -12,7 +12,7 @@ const steps = [
   {
     n: "03",
     title: "burn and refund",
-    body: "For each world you get, that price is burned. Everything above it comes back to you.",
+    body: "You get your deposit ÷ the final price, rounded down, in worlds. The $WORLDS you spent on them is burned. Everything above it comes back to you.",
   },
   {
     n: "04",
@@ -22,6 +22,10 @@ const steps = [
 ];
 
 const faq = [
+  {
+    q: "Is there a minimum deposit?",
+    a: "Yes, 10,000 $WORLDS. Deposits below that aren't counted.",
+  },
   {
     q: "Why does everyone pay the same price?",
     a: "So the leaderboard stays fair. Depositing more gets you more worlds, never a better price.",
@@ -89,6 +93,8 @@ export function WhitelistSection() {
             example
           </p>
           <p className="mt-3 text-lg text-parchment-dim">
+            Worlds = deposit ÷ final price, rounded down.
+            <br />
             You deposit{" "}
             <span className="text-parchment">430,000 $WORLDS</span>. The
             final price is <span className="text-parchment">100,000</span>.
