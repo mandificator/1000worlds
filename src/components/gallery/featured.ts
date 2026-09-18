@@ -8,7 +8,7 @@ export type WallPlacement = {
   rotationY: number;
 };
 
-const ART_SIZE = 2.1;
+const ART_SIZE = 3.2;
 export const FRAME_BORDER = 0.16;
 const FRAME_WIDTH = ART_SIZE + FRAME_BORDER;
 const Y = 3.1;
@@ -26,9 +26,9 @@ function layout(count: number) {
   return Array.from({ length: count }, (_, i) => start + i * pitch);
 }
 
-const legendary = curated.slice(0, 6);
-const rar = curated.slice(16, 22);
-const neobisnuit = curated.slice(28, 34);
+const legendary = curated.slice(0, 4);
+const rar = curated.slice(16, 20);
+const neobisnuit = curated.slice(28, 32);
 
 // pulled a few cm off the wall face so the frame geometry never shares
 // an exact plane with the wall geometry (coplanar faces z-fight/flicker)

@@ -10,8 +10,10 @@ const TARGET = new THREE.Vector3(0, 3, 1);
 // mid-spin (that clipping was the stray white flash cutting through frame)
 const RADIUS = 7.5;
 const POLAR = 1.533; // ~level, slightly upward — matches the original resting shot
-const SPIN_END = 0.72; // scroll progress where the 360° spin completes
-const DESCEND_TARGET_Y = -3; // how far the camera sinks after the spin
+// the spin uses the section's entire scroll range, so the 360° completes
+// exactly as this block releases — no dead scroll space, no held moment
+// before the page scroll takes over straight into the first statement
+const SPIN_END = 1;
 
 function clamp01(v: number) {
   return Math.min(1, Math.max(0, v));
@@ -29,24 +31,18 @@ export function ScrollCamera({
   useFrame(({ camera }) => {
     const p = progressRef.current;
 
+    // a full 360° turn (spin=1 → azimuth=2π) lands the camera back on the
+    // exact same spot as azimuth=0, so it always returns to the opening shot
     const spin = easeInOut(clamp01(p / SPIN_END));
     const azimuth = spin * Math.PI * 2;
 
-    const descend = easeInOut(clamp01((p - SPIN_END) / (1 - SPIN_END)));
-    const y = THREE.MathUtils.lerp(
-      TARGET.y + RADIUS * Math.cos(POLAR),
-      DESCEND_TARGET_Y,
-      descend
-    );
-
     const sinPolar = Math.sin(POLAR);
     const x = TARGET.x + RADIUS * sinPolar * Math.sin(azimuth);
+    const y = TARGET.y + RADIUS * Math.cos(POLAR);
     const z = TARGET.z - RADIUS * sinPolar * Math.cos(azimuth);
 
     camera.position.set(x, y, z);
-
-    const lookY = THREE.MathUtils.lerp(TARGET.y, TARGET.y - 2.2, descend);
-    camera.lookAt(TARGET.x, lookY, TARGET.z);
+    camera.lookAt(TARGET);
   });
 
   return null;

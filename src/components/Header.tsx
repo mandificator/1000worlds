@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import { WorldsWallet } from "./WorldsWallet";
 import { scrollToId } from "@/lib/scroll";
 
-const sectionLinks = [
-  { id: "gallery", label: "gallery" },
-  { id: "lore", label: "lore" },
-  { id: "whitelist", label: "whitelist" },
+const routeLinks = [
+  { href: "/whitelist", label: "whitelist" },
+  { href: "/mint", label: "mint" },
+  { href: "/flywheel", label: "flywheel" },
 ];
 
 export function Header() {
@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gold/10 bg-ink/60 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
+      <div className="flex items-center justify-between px-6 py-4 sm:px-10 lg:px-16 xl:px-24">
         {isHome ? (
           <a
             href="#top"
@@ -39,37 +39,36 @@ export function Header() {
           </Link>
         )}
         <nav className="hidden items-center gap-8 md:flex">
-          {sectionLinks.map((l) =>
-            isHome ? (
-              <a
-                key={l.id}
-                href={`#${l.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToId(l.id);
-                }}
-                className="text-xs tracking-[0.25em] text-parchment-dim uppercase transition-colors hover:text-gold-bright"
-              >
-                {l.label}
-              </a>
-            ) : (
-              <Link
-                key={l.id}
-                href={`/#${l.id}`}
-                className="text-xs tracking-[0.25em] text-parchment-dim uppercase transition-colors hover:text-gold-bright"
-              >
-                {l.label}
-              </Link>
-            ),
+          {isHome ? (
+            <a
+              href="#gallery"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToId("gallery");
+              }}
+              className="text-xs tracking-[0.25em] text-parchment-dim uppercase transition-colors hover:text-gold-bright"
+            >
+              gallery
+            </a>
+          ) : (
+            <Link
+              href="/#gallery"
+              className="text-xs tracking-[0.25em] text-parchment-dim uppercase transition-colors hover:text-gold-bright"
+            >
+              gallery
+            </Link>
           )}
-          <Link
-            href="/flywheel"
-            className={`text-xs tracking-[0.25em] uppercase transition-colors hover:text-gold-bright ${
-              pathname === "/flywheel" ? "text-gold-bright" : "text-parchment-dim"
-            }`}
-          >
-            flywheel
-          </Link>
+          {routeLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className={`text-xs tracking-[0.25em] uppercase transition-colors hover:text-gold-bright ${
+                pathname === l.href ? "text-gold-bright" : "text-parchment-dim"
+              }`}
+            >
+              {l.label}
+            </Link>
+          ))}
         </nav>
         <WorldsWallet />
       </div>

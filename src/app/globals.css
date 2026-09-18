@@ -20,8 +20,40 @@
   --color-gold: var(--gold);
   --color-gold-bright: var(--gold-bright);
   --color-ember: var(--ember);
-  --font-serif: var(--font-fraunces);
-  --font-serif-text: var(--font-source-serif);
+  --font-serif: var(--font-archivo);
+  --font-serif-text: var(--font-archivo);
+}
+
+/* per-page color themes, drawn from the world generator's own palettes
+   (src/lib/worldEngine.ts) — override the tokens above, every component
+   that uses bg-ink/bg-wall/text-gold-bright/etc. picks these up for free */
+[data-theme="solana"] {
+  --ink: #08211a;
+  --wall: #04140f;
+  --wall-2: #0f3527;
+  --gold: #9945ff;
+  --gold-bright: #14f195;
+}
+[data-theme="asfintit"] {
+  --ink: #2a1024;
+  --wall: #1a0916;
+  --wall-2: #3d1830;
+  --gold: #d85a4f;
+  --gold-bright: #f7bb5e;
+}
+[data-theme="ultraviolet"] {
+  --ink: #210a30;
+  --wall: #150620;
+  --wall-2: #341046;
+  --gold: #b23bd6;
+  --gold-bright: #f08cff;
+}
+[data-theme="aurora"] {
+  --ink: #0a2028;
+  --wall: #05141a;
+  --wall-2: #123640;
+  --gold: #1fae8f;
+  --gold-bright: #8cefc0;
 }
 
 * {
@@ -35,7 +67,7 @@ html {
 body {
   background: var(--ink);
   color: var(--parchment);
-  font-family: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  font-family: var(--font-archivo), Helvetica, Arial, sans-serif;
 }
 
 ::selection {
@@ -55,8 +87,9 @@ body {
 }
 
 .font-display {
-  font-family: var(--font-fraunces), Georgia, serif;
-  font-optical-sizing: auto;
+  font-family: var(--font-mekzantine), var(--font-archivo), Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
 }
 
 .text-outline-gold {
@@ -132,11 +165,12 @@ body {
 .wallet-adapter-modal-wrapper {
   background: var(--wall) !important;
   border: 1px solid rgba(153, 69, 255, 0.35);
-  font-family: var(--font-source-serif), Georgia, serif;
+  font-family: var(--font-archivo), Helvetica, Arial, sans-serif;
   border-radius: 2px;
 }
 .wallet-adapter-modal-title {
-  font-family: var(--font-fraunces), Georgia, serif;
+  font-family: var(--font-archivo), Helvetica, Arial, sans-serif;
+  font-weight: 700;
   color: var(--parchment) !important;
 }
 .wallet-adapter-modal-button-close {

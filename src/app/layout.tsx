@@ -1,21 +1,24 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Source_Serif_4 } from "next/font/google";
+import { Archivo } from "next/font/google";
+import localFont from "next/font/local";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import "./globals.css";
 import { SolanaWalletProvider } from "@/providers/WalletProvider";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT", "WONK"],
+  weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
 });
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+const mekzantine = localFont({
+  src: [
+    { path: "../fonts/Mekzantine-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/Mekzantine-Regular.woff", weight: "400", style: "normal" },
+  ],
+  variable: "--font-mekzantine",
+  display: "swap",
 });
 
 const SITE_URL = "https://1000worlds.xyz";
@@ -65,7 +68,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fraunces.variable} ${sourceSerif.variable} grain antialiased`}>
+      <body
+        className={`${archivo.variable} ${mekzantine.variable} grain antialiased`}
+      >
         <SolanaWalletProvider>{children}</SolanaWalletProvider>
       </body>
     </html>
