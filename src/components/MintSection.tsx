@@ -20,7 +20,7 @@ export function MintSection() {
       <h1 className="font-display text-6xl text-parchment sm:text-7xl lg:text-8xl">
         mint
       </h1>
-      <p className="mx-auto mt-6 max-w-xl text-lg text-parchment-dim italic sm:text-xl">
+      <p className="mx-auto mt-6 max-w-xl text-lg text-parchment-dim sm:text-xl">
         1000 worlds, minted on Solana as compressed NFTs. Every world begins
         almost empty. What it becomes is written by the hands that hold it.
       </p>

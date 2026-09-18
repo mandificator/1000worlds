@@ -18,8 +18,8 @@ function TokenFeesFlow() {
       <FlowNode cx={800} cy={70} accent />
       <FlowNode cx={800} cy={270} flame />
 
-      <FlowPct x={660} y={120} value="80%" />
-      <FlowPct x={660} y={220} value="20%" />
+      <FlowPct x={740} y={52} value="80%" />
+      <FlowPct x={740} y={298} value="20%" />
 
       <FlowLabel
         x={261}
@@ -58,8 +58,8 @@ function RoyaltiesFlow() {
       <FlowNode cx={800} cy={70} accent />
       <FlowNode cx={800} cy={270} flame />
 
-      <FlowPct x={660} y={120} value="80%" />
-      <FlowPct x={660} y={220} value="20%" />
+      <FlowPct x={740} y={52} value="80%" />
+      <FlowPct x={740} y={298} value="20%" />
 
       <FlowLabel
         x={255}
@@ -89,12 +89,12 @@ function RoyaltiesFlow() {
 
 function ArtUpgradeFlow() {
   return (
-    <FlowDiagram width={880} height={260}>
-      <FlowLine d="M336,130 L530,130" />
+    <FlowDiagram width={1100} height={260}>
+      <FlowLine d="M336,130 L770,130" />
       <FlowNode cx={306} cy={130} />
-      <FlowNode cx={560} cy={130} flame />
+      <FlowNode cx={800} cy={130} flame />
 
-      <FlowPct x={430} y={95} value="100%" />
+      <FlowPct x={680} y={95} value="100%" />
 
       <FlowLabel
         x={261}
@@ -104,7 +104,7 @@ function ArtUpgradeFlow() {
         detail={["paid in $WORLDS"]}
       />
       <FlowLabel
-        x={605}
+        x={845}
         y={130}
         title="burned"
         detail={["all of it removed from the $WORLDS supply,", "permanently"]}
@@ -118,21 +118,21 @@ export function CapitalFlowDiagram() {
     <div>
       <div className="space-y-16">
         <div>
-          <p className="mb-6 text-center text-sm tracking-[0.2em] text-parchment uppercase">
+          <p className="mb-6 text-center text-sm tracking-[0.2em] text-gold uppercase">
             token trading fees
           </p>
           <TokenFeesFlow />
         </div>
 
         <div>
-          <p className="mb-6 text-center text-sm tracking-[0.2em] text-parchment uppercase">
+          <p className="mb-6 text-center text-sm tracking-[0.2em] text-gold uppercase">
             NFT royalties
           </p>
           <RoyaltiesFlow />
         </div>
 
         <div>
-          <p className="mb-6 text-center text-sm tracking-[0.2em] text-parchment uppercase">
+          <p className="mb-6 text-center text-sm tracking-[0.2em] text-gold uppercase">
             art upgrades
           </p>
           <ArtUpgradeFlow />

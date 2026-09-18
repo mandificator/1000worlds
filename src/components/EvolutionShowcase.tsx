@@ -36,9 +36,9 @@ export function EvolutionShowcase() {
   const holder = Math.max(1, hands);
 
   return (
-    <div className="flex h-[100svh] w-full flex-col items-center justify-center gap-10 px-6 text-center sm:px-10">
+    <div className="flex h-[100svh] w-full flex-col items-center justify-center gap-20 px-6 text-center sm:px-10">
       <h2 className="font-display text-4xl text-parchment sm:text-6xl lg:text-7xl">
-        each world has 64 stages of evolution
+        64 stages of evolution
       </h2>
       <div
         ref={ref}
@@ -46,7 +46,7 @@ export function EvolutionShowcase() {
           visible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
         }`}
       >
-        <div className="aspect-square w-[70vw] max-w-xl border-2 border-white bg-black p-1 shadow-[0_0_32px_rgba(255,255,255,0.2)] sm:w-[50vw]">
+        <div className="aspect-square w-[70vw] max-w-xl border-[10px] border-white bg-black p-1 shadow-[0_0_32px_rgba(255,255,255,0.2)] sm:w-[50vw]">
           <WorldCanvas
             seed={WORLD.seed}
             phase={WORLD.phase}

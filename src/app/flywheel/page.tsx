@@ -21,7 +21,7 @@ export default function FlywheelPage() {
         <h1 className="mt-6 font-display text-6xl text-parchment sm:text-7xl lg:text-8xl">
           the flywheel
         </h1>
-        <p className="mx-auto mt-6 max-w-lg text-lg text-parchment-dim italic sm:text-xl">
+        <p className="mx-auto mt-6 max-w-lg text-lg text-parchment-dim sm:text-xl">
           After mint, every trade, royalty and art upgrade loops back into
           $WORLDS and the people who hold it.
         </p>

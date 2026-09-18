@@ -47,7 +47,7 @@ export function WhitelistSection() {
       <h1 className="mt-6 font-display text-6xl text-parchment sm:text-7xl lg:text-8xl">
         get your worlds
       </h1>
-      <p className="mx-auto mt-6 max-w-lg text-lg text-parchment-dim italic sm:text-xl">
+      <p className="mx-auto mt-6 max-w-lg text-lg text-parchment-dim sm:text-xl">
         Deposit $WORLDS. Everyone pays the same price per world. The rest
         comes back to you.
       </p>

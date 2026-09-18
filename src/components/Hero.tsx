@@ -78,7 +78,7 @@ export function Hero() {
                 1000 worlds
               </h1>
               <p
-                className="fade-up mt-6 max-w-xl text-lg text-parchment-dim italic sm:text-xl"
+                className="fade-up mt-6 max-w-xl text-lg text-parchment-dim sm:text-xl"
                 style={{ animationDelay: "0.25s" }}
               >
                 When the apocalypse is near, the new worlds are already here.
