@@ -16,7 +16,6 @@ export function MintSection() {
 
   return (
     <section className="relative bg-wall px-6 pt-40 pb-32 text-center sm:px-10 lg:px-16 xl:px-24">
-      <div className="divider-rule mx-auto mb-10 w-24" />
       <h1 className="font-display text-6xl text-parchment sm:text-7xl lg:text-8xl">
         mint
       </h1>

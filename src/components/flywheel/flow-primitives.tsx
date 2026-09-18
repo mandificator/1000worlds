@@ -152,6 +152,45 @@ export function FlowLabel({
   );
 }
 
+export type FlowStep = {
+  title: string;
+  detail?: string[];
+  accent?: boolean;
+};
+
+// mobile fallback for FlowDiagram — the SVG's fixed viewBox shrinks its
+// text past legibility on narrow screens, so below `lg` we swap the
+// diagram for this plain numbered step list instead
+export function FlowStepsTable({ steps }: { steps: FlowStep[] }) {
+  return (
+    <div className="mx-auto w-full max-w-md text-left lg:hidden">
+      <div className="divide-y divide-gold/10 border-y border-gold/10">
+        {steps.map((step, i) => (
+          <div key={step.title} className="flex gap-4 py-4">
+            <span className="font-display text-sm text-gold-bright/70">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <div>
+              <p
+                className={`font-display text-base ${
+                  step.accent ? "text-gold-bright" : "text-parchment"
+                }`}
+              >
+                {step.title}
+              </p>
+              {step.detail?.map((line) => (
+                <p key={line} className="mt-1 text-sm text-parchment-dim">
+                  {line}
+                </p>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function FlowPct({ x, y, value }: { x: number; y: number; value: string }) {
   return (
     <text
